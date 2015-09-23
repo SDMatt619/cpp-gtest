@@ -38,7 +38,11 @@ TEST(RandoTest, isDivisbleBy)
 TEST(RandoTest, isPrime)
 {
 	Rando rando;
+	ASSERT_FALSE(rando.isPrime(1));
 	ASSERT_TRUE(rando.isPrime(2));
+	ASSERT_FALSE(rando.isPrime(0));
+	ASSERT_TRUE(rando.isPrime(7));
+	ASSERT_FALSE(rando.isPrime(6));
 }
 
 TEST(RandoTest, nearestToZero)
