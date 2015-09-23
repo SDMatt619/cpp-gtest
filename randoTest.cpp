@@ -32,7 +32,10 @@ TEST(RandoTest, allChildrenSmile)
 TEST(RandoTest, isDivisbleBy)
 {
 	Rando rando;
-	ASSERT_FALSE(rando.isDivisbleBy(2,2));
+	ASSERT_TRUE(rando.isDivisbleBy(2,2));
+	ASSERT_FALSE(rando.isDivisbleBy(2,3));
+	ASSERT_TRUE(rando.isDivisbleBy(2,6));
+	ASSERT_TRUE(rando.isDivisbleBy(6,2));
 }
 
 TEST(RandoTest, isPrime)
