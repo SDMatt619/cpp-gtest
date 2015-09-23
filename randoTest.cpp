@@ -39,6 +39,8 @@ TEST(RandoTest, isDivisbleBy)
 	ASSERT_FALSE(rando.isDivisbleBy(2,3));
 	ASSERT_TRUE(rando.isDivisbleBy(2,6));
 	ASSERT_TRUE(rando.isDivisbleBy(6,2));
+	ASSERT_FALSE(rando.isDivisbleBy(0,2));
+	ASSERT_FALSE(rando.isDivisbleBy(2,0));
 }
 
 TEST(RandoTest, isPrime)
