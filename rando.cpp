@@ -60,7 +60,20 @@ bool Rando::isPrime(int num)
 **/
 int Rando::nearestToZero(int a, int b)
 {
-	if(a>b)
+	int x,y;
+	if(a < 0)
+		x = a*(-1);
+	else
+		x = a;
+	if(b < 0)
+		y = b*(-1);
+	else
+		y = b;
+	if(a == 0)
+		return b;
+	else if(b == 0)
+		return a;
+	else if(x>y)
 	{
 		return b;
 	}
