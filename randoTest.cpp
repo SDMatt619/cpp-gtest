@@ -28,3 +28,23 @@ TEST(RandoTest, allChildrenSmile)
 	Rando rando;
 	ASSERT_TRUE( rando.shouldWorry(true,true,true) );
 }
+
+TEST(RandoTest, isDivisbleBy)
+{
+	Rando rando;
+	ASSERT_FALSE(rando.isDivisbleBy(2,2));
+}
+
+TEST(RandoTest, isPrime)
+{
+	Rando rando;
+	ASSERT_TRUE(rando.isPrime(2));
+}
+
+TEST(RandoTest, nearestToZero)
+{
+	Rando rando;
+	EXPECT_EQ(1, rando.nearestToZero(1,2));
+	EXPECT_EQ(2, rando.nearestToZero(3,2));
+	EXPECT_EQ(3, rando.nearestToZero(3,3));
+}
