@@ -29,7 +29,21 @@ bool Rando::isDivisbleBy(int first, int second)
 **/
 bool Rando::isPrime(int num)
 {
-	return true;
+	if(num == 0 || num == 1)
+	{
+		return false;
+	}
+	else
+	{
+		for(int i = 2; i < num; i++)
+		{
+			if(num % i == 0)
+			{
+				return false;
+			}
+		}
+		return true;
+	}
 }
 
 /**
