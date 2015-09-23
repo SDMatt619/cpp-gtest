@@ -54,6 +54,7 @@ TEST(RandoTest, isPrime)
 	ASSERT_FALSE(rando.isPrime(0));
 	ASSERT_TRUE(rando.isPrime(7));
 	ASSERT_FALSE(rando.isPrime(6));
+	ASSERT_FALSE(rando.isPrime(-1));
 }
 
 TEST(RandoTest, nearestToZero)
