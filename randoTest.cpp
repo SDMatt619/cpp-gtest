@@ -54,6 +54,10 @@ TEST(RandoTest, isPrime)
 TEST(RandoTest, nearestToZero)
 {
 	Rando rando;
+	EXPECT_EQ(1, rando.nearestToZero(0,1));
+	EXPECT_EQ(1, rando.nearestToZero(1,0));
+	EXPECT_EQ(-1, rando.nearestToZero(-1,2));
+	EXPECT_EQ(-1, rando.nearestToZero(2,-1));
 	EXPECT_EQ(1, rando.nearestToZero(1,2));
 	EXPECT_EQ(2, rando.nearestToZero(3,2));
 	EXPECT_EQ(3, rando.nearestToZero(3,3));
